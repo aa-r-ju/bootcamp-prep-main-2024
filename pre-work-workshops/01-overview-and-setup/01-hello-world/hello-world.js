@@ -7,3 +7,6 @@ console.log("hello world!");
   it spans multiple lines!
 */
 console.log("practice");
+let name = "aarju";
+let greetings = "hola dear";
+console.log(greetings + " " + name);
