@@ -1,8 +1,15 @@
 // YOUR CODE BELOW
 function lastFridayNight(arr) {
   let total = 0;
-  for (let i = 0; i < arr.length; i++) {
-    total += arr[i].amount;
+  // in regular or simple way
+  //   for (let i = 0; i < arr.length; i++) {
+  //     total += arr[i].amount;
+  //   }
+
+  // in object's way or new way according to object
+  for (let key in arr) {
+    console.log(arr[key], "aarju");
+    total += arr[key].amount;
   }
   return total;
 }
@@ -26,5 +33,4 @@ let transactions = [
   },
 ];
 
-// console.log(transactions[0].amount);
 console.log(lastFridayNight(transactions));
