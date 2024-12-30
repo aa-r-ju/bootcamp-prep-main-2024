@@ -64,6 +64,7 @@ let tacoCatInc = {
     for (let category in para) {
       let itemName = para[category];
       let item = this[category][itemName];
+      console.log(item.quantity, "test");
       if (item && item.quantity > 0) {
         sum += item.cost;
         item.quantity -= 1;
@@ -78,7 +79,7 @@ let tacoCatInc = {
 console.log(tacoCatInc.currentInventory());
 
 tacoCatInc.sale(order); // => 7
-console.log(tacoCatInc.sale(order));
+// console.log(tacoCatInc.sale(order));
 console.log(tacoCatInc.gourmetFishFilling.salmon.quantity);
 console.log(tacoCatInc.cash);
 console.log(tacoCatInc.currentInventory());
