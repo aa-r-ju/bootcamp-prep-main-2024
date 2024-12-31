@@ -10,5 +10,5 @@ Do not use the native .reverse() method in your own implementation.
 ```javascript
 let myArray = [1, 2, 3, 4];
 reverse(myArray);
-console.log(myArray) // [4, 3, 2, 1]
+console.log(myArray); // [4, 3, 2, 1]
 ```
